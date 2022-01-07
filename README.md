@@ -38,7 +38,7 @@ Inside `App.js` or the equivalent entry file
 
 `backgroundColor` container background color. Must be a valid color string
 
-**Example** `<InternetStatusBox labelColor backgroundColor={'#FDA361'} />`
+**Example** `<InternetStatusBox backgroundColor={'#FDA361'} />`
 #
 
 `labelColor` label text color. Must be a valid color string
