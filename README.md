@@ -11,6 +11,9 @@ Inside `App.js` or the equivalent entry file
 ```
 <View style={{ flex: 1 }}>
     <InternetStatusBox />
-    <The rest of your content goes here>
+    <The Rest Of Your Content Goes Here>
 </View>
 ```
+
+# Props
+`slideDuration` controls the amount of time it takes for the dropdown to slide onto screen (In milliseconds). Default is 700
