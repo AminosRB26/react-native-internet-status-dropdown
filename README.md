@@ -19,4 +19,5 @@ Inside `App.js` or the equivalent entry file
 `slideDuration` controls the amount of time it takes for the dropdown to slide onto screen (In milliseconds). Default is `700`
 
 **Example**
+
 `<InternetStatusBox slideDuration={500}`
