@@ -16,4 +16,6 @@ Inside `App.js` or the equivalent entry file
 ```
 
 # Props
-`slideDuration` controls the amount of time it takes for the dropdown to slide onto screen (In milliseconds). Default is 700
+`slideDuration` controls the amount of time it takes for the dropdown to slide onto screen (In milliseconds). Default is `700`
+## Example
+`<InternetStatusBox slideDuration={500}`
