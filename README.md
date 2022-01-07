@@ -24,19 +24,24 @@ Inside `App.js` or the equivalent entry file
 `label` The label text contained in the dropdown. Default is `No Internet Connection`. Must be a `String`
 
 **Example** `<InternetStatusBox label={'No Internet'} />`
+#
 
 `customLabel` custom label component which replaces the original label. Must be a `<Text>` component
 
 **Example** `<InternetStatusBox customLabel={<Text style={{ fontFamily: 'Poppins-Regular', fontSize: 16 }}>No Internet Connection</Text>} />`
+#
 
 `containerStyle` container style which accepts basic style object. Must be a `ViewStyle`
 
 **Example** `<InternetStatusBox containerStyle={{ borderRadius: 5, paddingVertical: 4 }} />`
+#
 
 `backgroundColor` container background color. Must be a valid color string
 
 **Example** `<labelColor backgroundColor={'#FDA361'} />`
+#
 
 `labelColor` label text color. Must be a valid color string
 
 **Example** `<labelColor labelColor={'#000000'} />`
+#
