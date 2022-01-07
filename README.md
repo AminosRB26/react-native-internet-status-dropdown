@@ -43,5 +43,5 @@ Inside `App.js` or the equivalent entry file
 
 `labelColor` label text color. Must be a valid color string
 
-**Example** `<InternetStatusBox labelColor labelColor={'#000000'} />`
+**Example** `<InternetStatusBox labelColor={'#000000'} />`
 #
