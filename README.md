@@ -56,4 +56,6 @@ Inside `App.js` or the equivalent entry file
 **Example** 
 
 `<InternetStatusBox labelColor={'#000000'} />`
-#
+
+# Support
+If you would like to support me, you could buy me a coffee https://www.buymeacoffee.com/aminosdev
