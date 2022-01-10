@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/npm/dt/react-native-internet-status-dropdown?color=%23FDA361&label=downloads&style=for-the-badge"> <img src="https://img.shields.io/npm/v/react-native-internet-status-dropdown?color=%23FFADAD&label=version&style=for-the-badge"> <img src="https://img.shields.io/static/v1?label=platform&message=Android | IOS&style=for-the-badge&color=%23BDB2FF"> <img src="https://img.shields.io/static/v1?label=license&message=mit&style=for-the-badge&color=%23ABC4FF">
+
 # Getting Started
 Use `npm install react-native-internet-status-dropdown` to install the package
 
