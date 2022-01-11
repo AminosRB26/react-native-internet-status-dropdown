@@ -3,6 +3,8 @@
 # Getting Started
 Use `npm install react-native-internet-status-dropdown` to install the package
 
+Use `npm install @react-native-community/netinfo` to install its dependency
+
 # Usage
 `import InternetStatusBox from 'react-native-internet-status-dropdown'`
 
