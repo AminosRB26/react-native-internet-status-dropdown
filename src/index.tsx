@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import { Text, Animated } from "react-native";
+import React, { useEffect, useRef } from "react";
+import { Text, Animated, useWindowDimensions } from "react-native";
 import NetInfo from "@react-native-community/netinfo";
 import { styles } from "./styles";
-import { InternetStatusProps } from "../declarations";
+import { InternetStatusProps } from '../declarations';
 
 const InternetStatusBox = ({
-  backgroundColor = undefined,
+  backgroundColor = '#FFF',
   slideDuration = 500,
   containerStyle = {},
   renderLabel = undefined,
@@ -13,7 +13,9 @@ const InternetStatusBox = ({
   labelColor = '#111'
 }: InternetStatusProps) => {
 
-  const progress = React.useRef(new Animated.Value(0)).current;
+  const { height, width } = useWindowDimensions();
+
+  const progress = useRef(new Animated.Value(0)).current;
 
   // Slides dropdown alert onto or off screen
   const animate = (value: number) => {
@@ -26,15 +28,17 @@ const InternetStatusBox = ({
 
   useEffect(() => {
     NetInfo.addEventListener((state) => {
-      animate(state.isConnected ? 1 : 0);
+      animate(state.isConnected ? 0 : 1);
     });
-  }, [])
+  }, []);
 
   return (
     <Animated.View style={[styles.container, {
       backgroundColor,
+      height: height * 0.065,
+      width: width - 20,
       transform: [{
-        translateY: progress.interpolate({ inputRange: [0, 1], outputRange: [10, -70], }),
+        translateY: progress.interpolate({ inputRange: [0, 1], outputRange: [-70, 30], }),
       }],
     }, containerStyle]}>
       {
