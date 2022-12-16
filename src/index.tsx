@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { Text, Animated, useWindowDimensions } from "react-native";
 import NetInfo from "@react-native-community/netinfo";
 import { styles } from "./styles";
-import { InternetStatusProps } from '../declarations';
-
 const InternetStatusBox = ({
   backgroundColor = '#FFF',
   slideDuration = 500,
@@ -11,7 +9,7 @@ const InternetStatusBox = ({
   renderLabel = undefined,
   label = '',
   labelColor = '#111'
-}: InternetStatusProps) => {
+}) => {
 
   const { height, width } = useWindowDimensions();
 
@@ -41,15 +39,12 @@ const InternetStatusBox = ({
         translateY: progress.interpolate({ inputRange: [0, 1], outputRange: [-70, 30], }),
       }],
     }, containerStyle]}>
-      {
-        renderLabel ?
-          renderLabel :
-          <Text style={[styles.label, { color: labelColor }]}>
-            {label}
-          </Text>
-      }
+      {renderLabel ?
+        renderLabel :
+        <Text style={[styles.label, { color: labelColor }]}>
+          {label}
+        </Text>}
     </Animated.View>
-  )
-}
-
+  );
+};
 export default InternetStatusBox;

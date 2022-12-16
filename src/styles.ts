@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
@@ -8,9 +8,10 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
+        zIndex: 10001
     },
     label: {
         fontSize: 14,
         color: '#111'
     }
-})
+});
